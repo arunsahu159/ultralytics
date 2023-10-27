@@ -244,7 +244,7 @@ def non_max_suppression(
         i = i[:max_det]  # limit detections
 
         # # Experimental
-        print("used merge-nms")
+        # print("used merge-nms")
         merge = True  # use merge-NMS
         if merge and (1 < n < 3E3):  # Merge NMS (boxes merged using weighted mean)
             # Update boxes as boxes(i,4) = weights(i,n) * boxes(n,4)
